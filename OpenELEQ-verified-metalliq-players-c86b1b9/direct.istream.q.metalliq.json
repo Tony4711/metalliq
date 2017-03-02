@@ -1,0 +1,30 @@
+{
+ "name"         : "Direct [COLOR FF0084FF]-[/COLOR] ISTREAM ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.istream",
+ "plugin"       : "script.icechannel",
+ "priority"     : 200,
+ "id"           : "direct.istream.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://script.icechannel/?name={title}&img={poster}&title={title}&item_title={title}&video_type=movie&indexer=movies&imdb_id={imdb}&mode=file_hosts&item_mode=file_hosts&type=movies&library=true",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [
+  [
+   {
+    "link"      : "plugin://script.icechannel/?episode={episode}&name={clearname}&title={title}&season={season}&section=&indexer=tv_shows&library=true&imdb_id={imdb}&video_type=episode&year=&type=tv_episodes&mode=file_hosts",
+    "steps"     : [],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "musicvideos"  : [],
+ "music"        : [],
+ "live"         : []
+}

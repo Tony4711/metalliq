@@ -1,0 +1,21 @@
+{
+ "name": "Exodus Direct Play (Q)",
+ "plugin": "plugin.video.exodus",
+ "id": "provider.openeleq.exodus.direct.play",
+ "movies": [
+  [
+   {
+    "link": "plugin://plugin.video.exodus/?action=play&title={title}&year={year}&imdb={imdb}",
+    "action": "PLAY"
+   }
+  ]
+ ],
+ "tvshows": [
+  [
+   {
+    "link": "plugin://plugin.video.exodus/?action=play&title={name}&year={year}&imdb={imdb}&tvdb={id}&season={season}&episode={episode}&tvshowtitle={showname}&premiered={firstaired}",
+    "action": "PLAY"
+   }
+  ]
+ ]
+}

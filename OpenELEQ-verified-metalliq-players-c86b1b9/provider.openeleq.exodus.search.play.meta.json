@@ -1,0 +1,23 @@
+{
+ "name": "Exodus Search Play (Q)",
+ "plugin": "plugin.video.exodus",
+ "id": "provider.openeleq.exodus.search.play",
+ "movies": [
+  [
+   {
+    "link": "plugin://plugin.video.exodus/?action=movieSearch&query={title}",
+    "steps": [".*{title}.*{year}.*"],
+    "action": "PLAY"
+   }
+  ]
+ ],
+ "tvshows": [
+  [
+   {
+    "link": "plugin://plugin.video.exodus/?action=tvSearch&query={clearname}",
+    "steps": [".*{clearname}.*",".*$${season}","($$.*$$)+{season}x{episode:02d}$$.*"],
+    "action": "PLAY"
+   }
+  ]
+ ]
+}

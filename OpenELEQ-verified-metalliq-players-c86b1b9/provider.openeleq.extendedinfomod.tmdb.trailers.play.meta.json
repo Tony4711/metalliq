@@ -1,0 +1,21 @@
+{
+ "name": "Extended Info Mod TMDb Trailers (Q)",
+ "plugin": "script.extendedinfo",
+ "id": "provider.openeleq.extendedinfomod.tmdb.trailers.play",
+ "movies": [
+  [
+   {
+    "link": "plugin://script.extendedinfo/?info=playtrailer&id={tmdb}",
+    "action": "PLAY"
+   }
+  ]
+ ],
+ "tvshows": [
+  [
+   {
+    "link": "plugin://script.extendedinfo/?info=playtvtrailer&id={tmdb}",
+    "action": "PLAY"
+   }
+  ]
+ ]
+}

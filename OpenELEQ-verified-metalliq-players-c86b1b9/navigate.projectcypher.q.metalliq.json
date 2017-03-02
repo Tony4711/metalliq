@@ -1,0 +1,84 @@
+{
+ "name"         : "Navigate [COLOR FF0084FF]-[/COLOR] Project Cypher ([COLOR FF0084FF]Q[/COLOR])",
+ "repository"   : "repository.merlin",
+ "plugin"       : "plugin.video.ProjectCypher",
+ "priority"     : 800,
+ "id"           : "navigate.projectcypher.q",
+ "filters"      : {},
+ "postprocess"  : "",
+ "movies"       : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*movies on demand.*",
+     "@any",
+     ".*{title}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ],
+ "tvshows"      : [],
+ "musicvideos"  : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*concerts.*",
+     ".*{artist}.*{album}.*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*concerts.*",
+     ".*{artist}.*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]  
+ ],
+ "music"        : [],
+ "live"         : [
+  [
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*iptv.*",
+     ".*iptv.*",
+     "({name}|{name|ws()})"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*iptv.*",
+     ".*iptv.*",
+     ".*({name}|{name|ws()}).*"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*iptv.*",
+     ".*iptv.*",
+     "({basename}|{basename|ws()|replace(ts,t)}).({extension}|{extension|number_to_text()}|{extension|text_to_number()})"
+     ],
+    "action"    : "PLAY"
+   },
+   {
+    "link"      : "plugin://plugin.video.ProjectCypher/",
+    "steps"     : [
+     ".*iptv.*",
+     ".*iptv.*",
+     ".*({basename}|{basename|ws()|replace(ts,t)}).({extension}|{extension|number_to_text()}|{extension|text_to_number()}).*"
+     ],
+    "action"    : "PLAY"
+   }
+  ]
+ ]
+}
